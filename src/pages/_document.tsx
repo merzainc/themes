@@ -1,12 +1,15 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { ThemeProvider } from '@/components/ThemeProvider';
+import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang='en'>
       <Head />
-      <body>
-        <Main />
-        <NextScript />
+      <body className='bg-base text-base'>
+        <ThemeProvider defaultTheme='dark' attribute='class'>
+          <Main />
+          <NextScript />
+        </ThemeProvider>
       </body>
     </Html>
   );
