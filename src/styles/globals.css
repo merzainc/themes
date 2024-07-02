@@ -7,12 +7,14 @@
     /* Backgrounds */
     --bg-base: 0 0% 100%;
     --text-base: 0 0% 10.6%;
+    --text-secondary: 212.7 15.5% 72.2%;
   }
   .dark {
     /* Backgrounds */
     --bg-base: 0 0% 10.6%;
 
     /* Text */
-    --text-base: 0 0% 64.3%;
+    --text-base: 212.7 15.5% 72.2%;
+    --text-secondary: 0 0% 64.3%;
   }
 }

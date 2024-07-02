@@ -17,7 +17,14 @@ const config: Config = {
       },
       colors: {
         base: 'hsl(var(--text-base))',
+        muted: 'hsl(var(--text-secondary))',
       },
+    },
+    fontFamily: {
+      sans: ['InterVariable', 'Inter', , ...defaultTheme.fontFamily.sans],
+      mono: ['Fira Code VF', ...defaultTheme.fontFamily.mono],
+      source: ['Source Sans Pro', ...defaultTheme.fontFamily.sans],
+      'ubuntu-mono': ['Ubuntu Mono', ...defaultTheme.fontFamily.mono],
     },
     height: {
       15: '3.75rem',
