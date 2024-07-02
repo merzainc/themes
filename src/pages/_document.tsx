@@ -6,7 +6,7 @@ export default function Document() {
     <Html lang='en'>
       <Head />
       <body className='bg-base text-base'>
-        <ThemeProvider defaultTheme='dark' attribute='class'>
+        <ThemeProvider defaultTheme='light' attribute='class'>
           <Main />
           <NextScript />
         </ThemeProvider>
