@@ -32,7 +32,7 @@ const styles = {
   outline: [
     // Base
     'bg-btn-secondary dark:border-[2px] border-[1.5px] border-btn-secondary text-regular active:scale-98 hocus:bg-btn-secondary-hover',
-    // 'data-[disabled]:bg-btn-secondary-disabled data-[disabled]:border-btn-secondary-disabled data-[disabled]:text-btn-secondary-disabled',
+    'data-[disabled]:bg-btn-secondary-disabled data-[disabled]:border-btn-secondary-disabled data-[disabled]:text-btn-secondary-disabled',
   ],
   plain: [
     // Base
@@ -178,13 +178,13 @@ function isIconElement(element: ReactElement) {
 function getSizeClasses(size: ButtonSize) {
   switch (size) {
     case 'xs':
-      return 'py-1 px-3 text-3xs';
+      return 'px-2 py-1 text-xs';
     case 'sm':
-      return 'py-1.5 px-3 text-xs';
+      return 'px-2 py-1 text-xs';
     case 'md':
       return 'py-2 px-3 text-base';
     case 'lg':
-      return 'py-2.5 px-4 text-base';
+      return 'py-2 px-3.5 text-base';
     case 'xl':
       return 'py-3 px-4 text-base';
     case '2xl':
@@ -246,7 +246,7 @@ export const Button = React.forwardRef(function Button(
     capitalize = false,
     prefixIcon,
     suffixIcon,
-    size,
+    size = 'md',
     ...props
   }: ButtonProps,
   ref: React.ForwardedRef<HTMLElement>

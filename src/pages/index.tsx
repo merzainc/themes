@@ -11,10 +11,11 @@ function IndexPage() {
       </Head>
       <div className='mx-auto max-w-7xl pt-8 px-4'>
         <h4 className='heading-sm font-bold'>Buttons</h4>
-        <div className='mt-4'>
-          <Button size='md' outline>
-            Button MD
-          </Button>
+        <div className='mt-4 flex items-center gap-x-2'>
+          <Button outline>Button MD</Button>
+          <Button color='blue'>Button MD</Button>
+          <Button color='green'>Button MD</Button>
+          <Button color='red'>Button MD</Button>
         </div>
       </div>
     </>
