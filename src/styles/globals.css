@@ -6,9 +6,19 @@
   :root {
     /* Backgrounds */
     --bg-regular: 0 0% 100%;
+    --bg-screen: var(--slate1);
+    --bg-subtle: var(--slate2);
+    --bg-element: var(--slate3);
+    --bg-hover: var(--slate4);
+    --bg-selected: var(--slate5);
+    --bg-overlay: var(--expo-color-white);
+    --bg-success: var(--green3);
+    --bg-warning: var(--yellow3);
+    --bg-danger: var(--red3);
+    --bg-info: var(--blue3);
 
     /* Text */
-    --text-regular: 0 0% 10.6%;
+    --text-regular: 165, 1.8% 44.7%;
     --text-secondary: 220 5.9% 40%;
     --text-tertiary: 226.2 5.4% 52.7%;
     --text-muted: 230.8 5.9% 57.1%;
@@ -21,16 +31,26 @@
   .dark {
     /* Backgrounds */
     --bg-regular: 0 0% 10.6%;
+    --bg-screen: var(--slate1);
+    --bg-subtle: var(--slate2);
+    --bg-element: var(--slate3);
+    --bg-hover: var(--slate4);
+    --bg-selected: var(--slate5);
+    --bg-overlay: var(--expo-color-white);
+    --bg-success: var(--green3);
+    --bg-warning: var(--yellow3);
+    --bg-danger: var(--red3);
+    --bg-info: var(--blue3);
 
     /* Text */
-    --text-regular: 210 12.5% 12.5%;
-    --text-secondary: var(--slate11);
-    --text-tertiary: var(--slate10);
-    --text-muted: var(--slate9);
+    --text-regular: 0 0% 100%;
+    --text-secondary: 216 6.8% 71%;
+    --text-tertiary: 221.5 5.2% 49.2%;
+    --text-muted: 218.6 6.3% 43.9%;
     --text-link: 210.1 100% 52%;
-    --text-success: var(--green11);
-    --text-warning: var(--yellow11);
-    --text-danger: var(--red11);
-    --text-info: var(--blue11);
+    --text-success: 134.9 63.6% 50.4%;
+    --text-warning: 50 100% 52%;
+    --text-danger: 3.4 100% 61.4%;
+    --text-info: 197.4 100% 69.6%;
   }
 }
