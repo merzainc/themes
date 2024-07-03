@@ -7,7 +7,7 @@ function IndexPage() {
         <title>TSX</title>
       </Head>
       <div className='mx-auto max-w-7xl pt-8 px-4'>
-        <h3 className='heading-lg font-bold mb-3'>The King's Plan</h3>
+        <h3 className='heading-md font-bold mb-3'>The King's Plan</h3>
         <div className='space-y-3'>
           <p className='text-regular'>
             The king thought long and hard, and finally came up with a brilliant

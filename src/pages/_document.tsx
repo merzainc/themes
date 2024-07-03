@@ -9,7 +9,7 @@ export default function Document() {
         <link rel='stylesheet' href='https://rsms.me/inter/inter.css' />
       </Head>
       <body className='bg-regular text-regular'>
-        <ThemeProvider defaultTheme='dark' attribute='class'>
+        <ThemeProvider defaultTheme='light' attribute='class'>
           <Main />
           <NextScript />
         </ThemeProvider>

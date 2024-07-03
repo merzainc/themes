@@ -52,5 +52,13 @@
     --text-warning: 50 100% 52%;
     --text-danger: 3.4 100% 61.4%;
     --text-info: 197.4 100% 69.6%;
+
+    /* Borders */
+    --border-regular: 210 8.8% 31.4%;
+    --border-secondary: 213.3 7.7% 22.9%;
+    --border-success: var(--green7);
+    --border-warning: var(--yellow7);
+    --border-danger: var(--red7);
+    --border-info: var(--blue7);
   }
 }
