@@ -1,6 +1,9 @@
+import { Button } from '@/components/Button';
+import { useTheme } from 'next-themes';
 import Head from 'next/head';
 
 function IndexPage() {
+  const { setTheme, theme } = useTheme();
   return (
     <>
       <Head>
@@ -9,9 +12,17 @@ function IndexPage() {
       <div className='mx-auto max-w-7xl pt-8 px-4'>
         <h4 className='heading-sm font-bold'>Buttons</h4>
         <div className='mt-4'>
-          <button className='px-3 shadow-xs active:scale-98 py-1 text-regular bg-btn-secondary hocus:bg-btn-secondary-hover border-[2px] border-solid border-btn-secondary rounded-md'>
-            Secondary Button
-          </button>
+          <Button
+            href='/link'
+            size='md'
+            onClick={() => {
+              console.log('theme', theme);
+              setTheme(theme === 'light' ? 'dark' : 'light');
+            }}
+            outline
+          >
+            Button MD
+          </Button>
         </div>
       </div>
     </>
