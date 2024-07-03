@@ -10,6 +10,14 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    boxShadow: {
+      none: 'var(--shadows-none)',
+      xs: 'var(--shadows-xs)',
+      sm: 'var(--shadows-sm)',
+      md: 'var(--shadows-md)',
+      lg: 'var(--shadows-lg)',
+      xl: 'var(--shadows-xl)',
+    },
     extend: {
       backgroundColor: {
         regular: 'hsl(var(--bg-regular))',

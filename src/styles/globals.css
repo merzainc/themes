@@ -29,19 +29,27 @@
     --text-info: 199 78.3% 54.9%;
 
     /* Buttons  */
-    --btn-secondary-bg: var(--slate3);
-    --btn-secondary-border: var(--slate8);
-    --btn-secondary-hover: var(--slate4);
-    --btn-secondary-icon: var(--slate12);
-    --btn-secondary-text: var(--expo-color-white);
-    --btn-secondary-disabled-bg: var(--slate1);
-    --btn-secondary-disabled-border: var(--slate7);
-    --btn-secondary-disabled-text: var(--slate11);
+    --btn-secondary-bg: 0 0% 100%;
+    --btn-secondary-border: 205 10.7% 78%;
+    --btn-secondary-hover: 210 16.7% 95.3%;
+    --btn-secondary-icon: 205.7 6.3% 43.5%;
+    --btn-secondary-disabled-bg: 0 0% 100%;
+    --btn-secondary-disabled-border: 205.7 12.3% 88.8%;
+    --btn-secondary-disabled-text: 205.7 6.3% 56.1%;
+
+    /* Light shadows */
+    --shadows-none: 0 0 transparent;
+    --shadows-xs: 0 1px 3px rgba(0, 0, 0, 0.025), 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadows-sm: 0 3px 6px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.07);
+    --shadows-md: 0 10px 20px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.05);
+    --shadows-lg: 0 15px 25px rgba(0, 0, 0, 0.12),
+      0 5px 10px rgba(0, 0, 0, 0.05);
+    --shadows-xl: 0 20px 40px rgba(0, 0, 0, 0.15);
   }
   .dark {
     /* Backgrounds */
     --bg-regular: 0 0% 10.6%;
-    --bg-screen: var(--slate1);
+    --bg-screen: #fcfcfd;
     --bg-subtle: var(--slate2);
     --bg-element: var(--slate3);
     --bg-hover: var(--slate4);
@@ -79,5 +87,13 @@
     --btn-secondary-disabled-bg: var(--slate1);
     --btn-secondary-disabled-border: var(--slate7);
     --btn-secondary-disabled-text: var(--slate11);
+
+    /* Dark shadows */
+    --shadows-none: 0 0 transparent;
+    --shadows-xs: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadows-sm: 0 3px 6px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.25);
+    --shadows-md: 0 10px 20px rgba(0, 0, 0, 0.25), 0 3px 6px rgba(0, 0, 0, 0.25);
+    --shadows-lg: 0 15px 25px rgba(0, 0, 0, 0.5), 0 5px 10px rgba(0, 0, 0, 0.25);
+    --shadows-xl: 0 20px 40px rgba(0, 0, 0, 0.5);
   }
 }
