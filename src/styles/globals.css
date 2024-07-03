@@ -27,6 +27,16 @@
     --text-warning: 48 100% 50%;
     --text-danger: 3.2 100% 59.4%;
     --text-info: 199 78.3% 54.9%;
+
+    /* Buttons  */
+    --btn-secondary-bg: var(--slate3);
+    --btn-secondary-border: var(--slate8);
+    --btn-secondary-hover: var(--slate4);
+    --btn-secondary-icon: var(--slate12);
+    --btn-secondary-text: var(--expo-color-white);
+    --btn-secondary-disabled-bg: var(--slate1);
+    --btn-secondary-disabled-border: var(--slate7);
+    --btn-secondary-disabled-text: var(--slate11);
   }
   .dark {
     /* Backgrounds */
@@ -36,7 +46,7 @@
     --bg-element: var(--slate3);
     --bg-hover: var(--slate4);
     --bg-selected: var(--slate5);
-    --bg-overlay: var(--expo-color-white);
+    --bg-overlay: 0 0% 100%;
     --bg-success: var(--green3);
     --bg-warning: var(--yellow3);
     --bg-danger: var(--red3);
@@ -54,11 +64,20 @@
     --text-info: 197.4 100% 69.6%;
 
     /* Borders */
-    --border-regular: 210 8.8% 31.4%;
+    --border-regular: 212.7 7.6% 28.4%;
     --border-secondary: 213.3 7.7% 22.9%;
     --border-success: var(--green7);
     --border-warning: var(--yellow7);
     --border-danger: var(--red7);
     --border-info: var(--blue7);
+
+    /* Buttons  */
+    --btn-secondary-bg: 192 7.2% 13.5%;
+    --btn-secondary-border: 206.7 5.6% 31.6%;
+    --btn-secondary-hover: 210 7.1% 16.5%;
+    --btn-secondary-icon: 220 9.1% 93.5%;
+    --btn-secondary-disabled-bg: var(--slate1);
+    --btn-secondary-disabled-border: var(--slate7);
+    --btn-secondary-disabled-text: var(--slate11);
   }
 }

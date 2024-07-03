@@ -14,6 +14,20 @@ const config: Config = {
       backgroundColor: {
         regular: 'hsl(var(--bg-regular))',
         transparent: 'transparent',
+        'btn-secondary': 'hsl(var(--btn-secondary-bg))',
+        'btn-secondary-hover': 'hsl(var(--btn-secondary-hover))',
+        'btn-secondary-disabled': 'hsl(var(--btn-secondary-disabled-bg))',
+      },
+      borderColor: {
+        regular: 'hsl(var(--border-regular))',
+        secondary: 'hsl(var(--border-secondary))',
+        success: 'hsl(var(--border-success))',
+        warning: 'hsl(var(--border-warning))',
+        danger: 'hsl(var(--border-danger))',
+        info: 'hsl(var(--border-info))',
+        transparent: 'transparent',
+        'btn-secondary': 'hsl(var(--btn-secondary-border))',
+        'btn-secondary-disabled': 'hsl(var(--btn-secondary-disabled-border))',
       },
       colors: {
         regular: 'hsl(var(--text-regular))',
@@ -25,6 +39,8 @@ const config: Config = {
         warning: 'hsl(var(--text-warning))',
         danger: 'hsl(var(--text-danger))',
         info: 'hsl(var(--text-info))',
+        'button-secondary-icon': 'hsl(var(--btn-secondary-icon))',
+        'button-secondary-disabled': 'hsl(var(--btn-secondary-disabled-text))',
       },
     },
     fontFamily: {
@@ -141,6 +157,12 @@ const config: Config = {
         fontSize: '1.75rem',
         lineHeight: '1.875rem',
       },
+    },
+    scale: {
+      98: '.98',
+      1025: '1.025',
+      175: '1.75',
+      200: '2.0',
     },
   },
   plugins: [
