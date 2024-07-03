@@ -5,7 +5,6 @@ import { Link } from './Link';
 import { mergeClasses, titleCase } from '@merzaui/react';
 
 const styles = {
-  base: [],
   solid: [
     // Optical border, implemented as the button background to avoid corner artifacts
     'border-transparent bg-[--btn-border]',
@@ -179,17 +178,17 @@ function isIconElement(element: ReactElement) {
 function getSizeClasses(size: ButtonSize) {
   switch (size) {
     case 'xs':
-      return 'h-8 px-3 text-3xs';
+      return 'py-1 px-3 text-3xs';
     case 'sm':
-      return 'h-9 px-4 text-xs';
+      return 'py-1.5 px-3 text-xs';
     case 'md':
-      return 'h-10 px-3 text-base';
+      return 'py-2 px-3 text-base';
     case 'lg':
-      return 'h-11 px-6 text-base';
+      return 'py-2.5 px-4 text-base';
     case 'xl':
-      return 'h-12 px-6 text-base';
+      return 'py-3 px-4 text-base';
     case '2xl':
-      return 'h-15 px-6 text-lg';
+      return 'py-3 px-4 text-lg';
   }
 }
 
@@ -253,7 +252,6 @@ export const Button = React.forwardRef(function Button(
   ref: React.ForwardedRef<HTMLElement>
 ) {
   let classes = mergeClasses(
-    styles.base,
     outline
       ? styles.outline
       : plain
@@ -272,7 +270,7 @@ export const Button = React.forwardRef(function Button(
   const isSingleIconButton = (prefixIcon || suffixIcon) && !children;
 
   const twClasses = mergeClasses(
-    `inline-flex border border-solid rounded-md font-medium gap-2 items-center whitespace-nowrap transition`,
+    `relative isolate inline-flex border border-solid rounded-md font-medium gap-2 items-center whitespace-nowrap transition`,
     getSizeClasses(size!),
     isSingleIconButton && getButtonIconClasses(size!),
     'data-[disabled]:cursor-default data-[disabled]:opacity-80 data-[disabled]pointer-event-none',
