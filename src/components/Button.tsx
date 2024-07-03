@@ -1,6 +1,5 @@
 import React, { cloneElement, ReactElement } from 'react';
 import * as Headless from '@headlessui/react';
-import { clsx } from 'clsx';
 import { Link } from './Link';
 import { mergeClasses, titleCase } from '@merzaui/react';
 
@@ -31,8 +30,9 @@ const styles = {
   ],
   outline: [
     // Base
-    'bg-btn-secondary dark:border-[2px] border-[1.5px] border-btn-secondary text-regular active:scale-98 hocus:bg-btn-secondary-hover',
+    'bg-btn-secondary dark:border-[2px]  border-btn-secondary text-[#11181C] dark:text-regular  hocus:bg-btn-secondary-hover',
     'data-[disabled]:bg-btn-secondary-disabled data-[disabled]:border-btn-secondary-disabled data-[disabled]:text-btn-secondary-disabled',
+    '[--btn-icon:text-btn-secondary-icon]',
   ],
   plain: [
     // Base
@@ -182,7 +182,7 @@ function getSizeClasses(size: ButtonSize) {
     case 'sm':
       return 'px-2 py-1 text-xs';
     case 'md':
-      return 'py-2 px-3 text-base';
+      return 'py-2.5 px-3 text-base';
     case 'lg':
       return 'py-2 px-3.5 text-base';
     case 'xl':
@@ -229,7 +229,7 @@ function getIconSizeClasses(size: ButtonSize) {
 function getIconProps(element: ReactElement, classNames: string) {
   return {
     ...element.props,
-    className: clsx(classNames, element.props.className),
+    className: mergeClasses(classNames, element.props.className),
   };
 }
 
@@ -256,7 +256,7 @@ export const Button = React.forwardRef(function Button(
       ? styles.outline
       : plain
       ? styles.plain
-      : clsx(styles.solid, styles.colors[color ?? 'primary'])
+      : mergeClasses(styles.solid, styles.colors[color ?? 'primary'])
   );
 
   const isPrefixIcon = prefixIcon && isIconElement(prefixIcon);
@@ -270,9 +270,9 @@ export const Button = React.forwardRef(function Button(
   const isSingleIconButton = (prefixIcon || suffixIcon) && !children;
 
   const twClasses = mergeClasses(
-    `relative isolate inline-flex border border-solid rounded-md font-medium gap-2 items-center whitespace-nowrap transition`,
-    getSizeClasses(size!),
-    isSingleIconButton && getButtonIconClasses(size!),
+    `relative isolate inline-flex border border-solid active:scale-98 !shadow-xs rounded-md font-medium gap-2 items-center whitespace-nowrap transition`,
+    getSizeClasses(size),
+    isSingleIconButton && getButtonIconClasses(size),
     'data-[disabled]:cursor-default data-[disabled]:opacity-80 data-[disabled]pointer-event-none',
     className
   );
@@ -284,7 +284,7 @@ export const Button = React.forwardRef(function Button(
         : prefixIcon}
       {children && (
         <span
-          className={clsx(
+          className={mergeClasses(
             'flex self-center text-inherit leading-none',
             'href' in props && 'select-none'
           )}

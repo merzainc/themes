@@ -47,8 +47,8 @@ const config: Config = {
         warning: 'hsl(var(--text-warning))',
         danger: 'hsl(var(--text-danger))',
         info: 'hsl(var(--text-info))',
-        'button-secondary-icon': 'hsl(var(--btn-secondary-icon))',
-        'button-secondary-disabled': 'hsl(var(--btn-secondary-disabled-text))',
+        'btn-secondary-icon': 'hsl(var(--btn-secondary-icon))',
+        'btn-secondary-disabled': 'hsl(var(--btn-secondary-disabled-text))',
       },
     },
     fontFamily: {
