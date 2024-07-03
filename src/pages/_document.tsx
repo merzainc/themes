@@ -8,8 +8,8 @@ export default function Document() {
         <link rel='preconnect' href='https://rsms.me/' />
         <link rel='stylesheet' href='https://rsms.me/inter/inter.css' />
       </Head>
-      <body className='bg-base text-base'>
-        <ThemeProvider defaultTheme='dark' attribute='class'>
+      <body className='bg-regular text-regular'>
+        <ThemeProvider defaultTheme='light' attribute='class'>
           <Main />
           <NextScript />
         </ThemeProvider>

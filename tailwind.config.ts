@@ -12,19 +12,30 @@ const config: Config = {
   theme: {
     extend: {
       backgroundColor: {
-        base: 'hsl(var(--bg-base))',
+        regular: 'hsl(var(--bg-regular))',
         transparent: 'transparent',
       },
       colors: {
-        base: 'hsl(var(--text-base))',
-        muted: 'hsl(var(--text-secondary))',
+        regular: 'hsl(var(--text-regular))',
+        secondary: 'hsl(var(--text-secondary))',
+        tertiary: 'hsl(var(--text-tertiary))',
+        muted: 'hsl(var(--text-muted))',
+        link: 'hsl(var(--text-link))',
+        success: 'hsl(var(--text-success))',
+        warning: 'hsl(var(--text-warning))',
+        danger: 'hsl(var(--text-danger))',
+        info: 'hsl(var(--text-info))',
       },
     },
     fontFamily: {
-      sans: ['InterVariable', 'Inter', , ...defaultTheme.fontFamily.sans],
-      mono: ['Fira Code VF', ...defaultTheme.fontFamily.mono],
-      source: ['Source Sans Pro', ...defaultTheme.fontFamily.sans],
-      'ubuntu-mono': ['Ubuntu Mono', ...defaultTheme.fontFamily.mono],
+      sans: [
+        'InterVariable',
+        'Inter',
+        'Inter var',
+        ,
+        ...defaultTheme.fontFamily.sans,
+      ],
+      mono: ['Hack', ...defaultTheme.fontFamily.mono],
     },
     height: {
       15: '3.75rem',

@@ -5,16 +5,32 @@
 @layer base {
   :root {
     /* Backgrounds */
-    --bg-base: 0 0% 100%;
-    --text-base: 0 0% 10.6%;
-    --text-secondary: 212.7 15.5% 72.2%;
+    --bg-regular: 0 0% 100%;
+
+    /* Text */
+    --text-regular: 0 0% 10.6%;
+    --text-secondary: 220 5.9% 40%;
+    --text-tertiary: 226.2 5.4% 52.7%;
+    --text-muted: 230.8 5.9% 57.1%;
+    --text-link: 211.3 100% 50%;
+    --text-success: 135.1 58.6% 49.2%;
+    --text-warning: 48 100% 50%;
+    --text-danger: 3.2 100% 59.4%;
+    --text-info: 199 78.3% 54.9%;
   }
   .dark {
     /* Backgrounds */
-    --bg-base: 0 0% 10.6%;
+    --bg-regular: 0 0% 10.6%;
 
     /* Text */
-    --text-base: 212.7 15.5% 72.2%;
-    --text-secondary: 0 0% 64.3%;
+    --text-regular: 210 12.5% 12.5%;
+    --text-secondary: var(--slate11);
+    --text-tertiary: var(--slate10);
+    --text-muted: var(--slate9);
+    --text-link: 210.1 100% 52%;
+    --text-success: var(--green11);
+    --text-warning: var(--yellow11);
+    --text-danger: var(--red11);
+    --text-info: var(--blue11);
   }
 }
